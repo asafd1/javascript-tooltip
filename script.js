@@ -111,7 +111,7 @@ function setToolTip(self, h){
   $(self).append("<span>"+text+"</span>");
   var left = $(self).position().left;
   var topVisible = $(window).scrollTop();
-  var top = $(self).position().top - 30 > topVisible ? $(self).position().top - 30 : $(self).position().top + 30;
+  var top = $(self).position().top - 35 > topVisible ? $(self).position().top - 35 : $(self).position().top + 30;
   $(self).find("span").offset({ top: top, left: left + 20});
   $(self).find("span").css("display", "inline");
 }
